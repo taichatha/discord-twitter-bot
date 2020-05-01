@@ -176,9 +176,9 @@ class Processor:
             twitter_ids=self.discord_config.get("twitter_ids", []),
             in_reply_to_twitter_id=self.status_tweet["in_reply_to_user_id_str"],
             retweeted=self.status_tweet["retweeted"] or "retweeted_status" in self.status_tweet,
-            include_reply_to_user=self.discord_config.get("IncludeReplyToUser", True),
-            include_user_reply=self.discord_config.get("IncludeUserReply", True),
-            include_retweet=self.discord_config.get("IncludeRetweet", True),
+            include_reply_to_user=self.discord_config.get("IncludeReplyToUser", False),
+            include_user_reply=self.discord_config.get("IncludeUserReply", False),
+            include_retweet=self.discord_config.get("IncludeRetweet", False),
         )
 
     def get_text(self):
