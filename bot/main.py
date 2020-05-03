@@ -16,7 +16,8 @@ try:
 except ModuleNotFoundError:
     from bot.config import config, auth
 try:
-    from utils.twitter_id_converter import Converter
+    from utils.\
+        twitter_id_converter import Converter
 except ModuleNotFoundError:
     from bot.utils.twitter_id_converter import Converter
 try:
